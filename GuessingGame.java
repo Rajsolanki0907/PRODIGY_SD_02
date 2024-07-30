@@ -7,12 +7,12 @@ public class GuessingGame {
         Random random = new Random();
         Scanner scanner = new Scanner(System.in);
         
-        int numberToGuess = random.nextInt(10) + 1;
+        int numberToGuess = random.nextInt(100) + 1;
         int numberOfAttempts = 0;
         int userGuess = 0;
         
         System.out.println("Welcome to the Guessing Game!");
-        System.out.println("I have randomly selected a number between 1 and 10.");
+        System.out.println("I have randomly selected a number between 1 and 100.");
         System.out.println("Can you guess what it is?");
         
         while (userGuess != numberToGuess) {
